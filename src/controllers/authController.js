@@ -1,8 +1,8 @@
-const UserSchema = require('../models/userSchema')
-const bcrypt = require('bcrypt')
-const jwt = require('jsonwebtoken')
+const UserSchema = require('../models/userSchema');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
-const SECRET = process.env.SECRET
+const SECRET = process.env.SECRET;
 
 const login = (req, res) => {
     try {
@@ -32,8 +32,8 @@ const login = (req, res) => {
     } catch(e) {
         console.error(e)
     }
-}
+};
 
 module.exports = {
     login
-}
+};
