@@ -12,5 +12,7 @@ router.delete("/deleteUser", userController.deleteUser);
 router.patch("/changePassword", userController.updatePassword);
 
 router.patch("/updateAmountSpent", clientController.updateAmountSpent);
+router.patch("/createClient", clientController.createClient);
+router.delete("/deleteClient", clientController.deleteClient);
 
 module.exports = router;
